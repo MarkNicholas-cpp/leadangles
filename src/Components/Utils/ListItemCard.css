@@ -1,0 +1,14 @@
+.card-img-hover .card-img-inner div {
+  transition: top 1s;
+  animation-delay: 15s;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.card-img-hover:hover .card-img-inner div {
+  top: 50%;
+  opacity: 1;
+}
