@@ -19,11 +19,16 @@ function Home() {
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-nowrap flex-shrink-0 p-10">
+      <div className="flex items-start justify-center flex-nowrap flex-shrink-0 overflow-x-hidden md:overflow-x-scroll p-10">
         <ListItemCard />
         <ListItemCard />
         <ListItemCard />
         <ListItemCard />
+      </div>
+      <div className="h-screen">
+        <div className="w-3/4 flex items-center justify-center">
+        
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import "./ListItemCard.css";
 
 function ListItemCard() {
   return (
-    <div className="aspect-[3/4] m-3 border-t border-b border-gray-600 cursor-pointer">
+    <div className="aspect-[3/4] w-52 lg:w-64 m-3 border-t border-b border-gray-600 cursor-pointer flex-shrink-0 md:flex-grow">
       <p className="text-white text-xl font-semibold my-2">
         Investor Management
       </p>
@@ -21,7 +21,7 @@ function ListItemCard() {
       <p className="text-white inline text-md">
         Investor relations reimagined.
       </p>
-      <p className="text-gray-400 inline text-md">
+      <p className="text-gray-400 inline-block mb-3 text-md">
         Leverage software to drive meaningful, actionable engagement.
       </p>
     </div>
