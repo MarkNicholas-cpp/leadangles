@@ -1,12 +1,15 @@
-interface props{
-    content:string
+import React from "react";
+
+interface GradientButtonProps {
+  content: string;
 }
-function GradientButton({content}: props) {
+
+const GradientButton: React.FC<GradientButtonProps> = ({ content }) => {
   return (
-    <button className="glass rounded-full p-3 px-5 md:px-8  bg-gradient-to-r from-purple-200 to-red-400 hover:from-purple-500 hover:to-pink-900 text-transparent bg-clip-text">
+    <button className="bg-opacity-75 bg-dark-blue-700 border border-white rounded-lg relative bg-gray-100 light:bg-primary backdrop-filter backdrop-blur-lg backdrop-saturate-150 text-gray-800 border-opacity-25 px-4 py-2">
       {content}
     </button>
   );
-}
+};
 
 export default GradientButton;
