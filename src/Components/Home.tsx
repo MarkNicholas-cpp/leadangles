@@ -41,7 +41,7 @@ function Home() {
 
       <div className="py-3">
         <div className="flex items-center justify-center w-full">
-          <div>
+          <div className="mb-10">
             <p className="text-3xl text-center mb-10" ref={eleref}>
               Better together. AngelList partners with industry leaders.
             </p>
