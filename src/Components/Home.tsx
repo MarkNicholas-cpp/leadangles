@@ -34,7 +34,7 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="flex items-start justify-center flex-nowrap p-10">
+        <div className="flex items-start justify-center flex-nowrap overflow-scroll no-scrollbar p-10">
           <ListItemCard />
           <ListItemCard />
           <ListItemCard />
