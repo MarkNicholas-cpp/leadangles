@@ -2,8 +2,30 @@ import { useRef } from "react";
 import GradientButton from "./Utils/GradientButton";
 import ListItemCard from "./Utils/ListItemCard";
 import ThemeContainer from "./Utils/ThemeContainer";
+import { Slide } from "../interfaces/slide";
+import Carousel from "./Utils/Carousel";
 
 function Home() {
+  const slides: Slide[] = [
+    {
+      carouselText:
+        "One of AngelList’s biggest benefits is its all-in-one software-first approach to admin, legal and tax services.",
+      carouselSubtitle: "Cindy Bi, GP, CapitalX",
+      img: "https://images.unsplash.com/photo-1542396601-dca920ea2807",
+    },
+    {
+      carouselText:
+        "...it was crucial to get moving quickly and AngelList enabled a seamless launch.",
+      carouselSubtitle: "Nichole Wischoff, GP, Wischoff Ventures",
+      img: "https://images.unsplash.com/photo-1542370285-b8eb8317691c",
+    },
+    {
+      carouselText:
+        "No other platform combines the power, flexibility, reach, and network effects.",
+      carouselSubtitle: "Lenny Rachitsky, GP",
+      img: "https://images.unsplash.com/photo-1542397284385-6010376c5337",
+    },
+  ];
   const eleref = useRef<HTMLParagraphElement>(null);
   const eleref2 = useRef<HTMLDivElement>(null);
   return (
@@ -199,7 +221,7 @@ function Home() {
           </div>
           <div className="border-t border-b dark:border-[#5D5337] grid grid-cols-2">
             <div className="p-5 border-b dark:border-[#5D5337]">
-              <p className="text-6xl md:text-8xl">23k+</p>  
+              <p className="text-6xl md:text-8xl">23k+</p>
               <p className="text-normal">funds and syndicates</p>
             </div>
             <div className="p-5 border-b dark:border-[#5D5337]">
@@ -217,7 +239,9 @@ function Home() {
           </div>
         </div>
       </ThemeContainer>
-
+      <div className="h-screen md:h-[calc(100vh-100px)] box-border">
+        <Carousel slides={slides} autoSlideInterval={5000} title="Testimonials" />
+      </div>
     </>
   );
 }
