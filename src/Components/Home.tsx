@@ -240,7 +240,13 @@ function Home() {
         </div>
       </ThemeContainer>
       <div className="h-screen md:h-[calc(100vh-100px)] box-border">
-        <Carousel slides={slides} autoSlideInterval={5000} title="Testimonials" />
+        <Carousel
+          slides={slides}
+          autoSlideInterval={5000}
+          title="Testimonials"
+        />
+      </div>
+      <div className="h-screen bg-fixed bg-logo bg-contain bg-no-repeat bg-center">
       </div>
     </>
   );

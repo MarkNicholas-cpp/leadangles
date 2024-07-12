@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import NavItem from "./Utils/NavItem";
 
-function Nav() {
+
+const Nav: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,68 +29,25 @@ function Nav() {
     >
       <div className="flex px-10 items-center justify-between">
         <div className="flex gap-5">
-          <p className={`font-bold mr-5 flex items-center justify-center text-2xl ${
-            isScrolled ? "text-primary" : "text-white"
-          }`}>Lead Angels</p>
+          <p
+            className={`font-bold mr-5 flex items-center justify-center text-2xl ${
+              isScrolled ? "text-primary" : "text-white"
+            }`}
+          >
+            Lead Angels
+          </p>
           <nav className="md:items-center md:gap-3 hidden md:flex">
-          <a
-            className={`text-md font-normal p-5 px-2 transition-all ease-out duration-500  hover:border-primary ${
-              isScrolled ? "text-primary border-b-4 border-white hover:border-b-4" : "text-gray-50  border-b-4 border-primary hover:border-b-4"
-            }`}
-            href="#"
-          >
-            About
-            
-          </a>
-          <a
-            className={`text-md font-normal  p-5 px-2 transition-all ease-out duration-500 hover:border-primary ${
-              isScrolled ? "text-primary border-b-4 border-white hover:border-b-4" : "text-gray-50  border-b-4 border-primary hover:border-b-4"
-            }`}
-            href="#"
-          >
-            Discussion Board
-          </a>
-          <a
-            className={`text-md font-normal p-5 px-2 transition-all ease-out duration-500 hover:border-primary ${
-              isScrolled ? "text-primary border-b-4 border-white hover:border-b-4" : "text-gray-50  border-b-4 border-primary hover:border-b-4"
-            }`}
-            href="#"
-          >
-            Groups
-          </a>
-          <a
-            className={`text-md font-normal p-5 px-2 transition-all ease-out duration-500 hover:border-primary ${
-              isScrolled ? "text-primary border-b-4 border-white hover:border-b-4" : "text-gray-50  border-b-4 border-primary hover:border-b-4"
-            }`}
-            href="#"
-          >
-            News
-          </a>
-          <a
-            className={`text-md font-normal p-5 px-2 transition-all ease-out duration-500 hover:border-primary ${
-              isScrolled ? "text-primary border-b-4 border-white hover:border-b-4" : "text-gray-50  border-b-4 border-primary hover:border-b-4"
-            }`}
-            href="#"
-          >
-            Referrals
-          </a>
-          <a
-            className={`text-md font-normal border-b-4 border-white hover:border-b-4 p-5 px-2 transition-all ease-out duration-500 hover:border-primary ${
-              isScrolled ? "text-primary border-b-4 border-white hover:border-b-4" : "text-gray-50  border-b-4 border-primary hover:border-b-4"
-            }`}
-            href="#"
-          >
-            Update
-          </a>
-        </nav>
+            <NavItem isScrolled={isScrolled} navItem="About" />
+            <NavItem isScrolled={isScrolled} navItem="Discussion Board" />
+            <NavItem isScrolled={isScrolled} navItem="Groups" />
+            <NavItem isScrolled={isScrolled} navItem="News" />
+            <NavItem isScrolled={isScrolled} navItem="Referrals" />
+            <NavItem isScrolled={isScrolled} navItem="Update" />
+          </nav>
         </div>
-        
+
         <nav className="flex items-center gap-3">
-          <button
-            className={`text-md ${
-              isScrolled ? "text-primary" : "text-gray-50"
-            }`}
-          >
+          <button className={`text-md ${isScrolled ? "text-primary" : "text-gray-50"}`}>
             Sign In
           </button>
           <button
@@ -102,6 +61,6 @@ function Nav() {
       </div>
     </div>
   );
-}
+};
 
 export default Nav;
