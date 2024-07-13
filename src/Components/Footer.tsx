@@ -1,8 +1,8 @@
 function Footer() {
   return (
     <div className="bg-slate-100 p-10">
-      <div className="grid grid-rows-5 md:grid-cols-6">
-        <div className="section-1 md:col-span-2 ">
+      <div className="grid md:grid-cols-6 grid-rows-auto">
+        <div className="section-1 md:col-span-2">
           <p className="heading font-bold text-primary">Get Started</p>
           <ul>
             <li className="sub-headings text-normal text-sm text-primary my-3">
@@ -136,10 +136,10 @@ function Footer() {
       </div>
       <div className="rights py-5 border-b border-t border-slate-300 flex items-center justify-between text-sm my-10">
         <div className="flex gap-5">
-          <p className="text-primary">TermsTerms</p>
-          <p className="text-primary">PrivacyPrivacy</p>
-          <p className="text-primary">DisclosuresDisclosures</p>
-          <p className="text-primary">Cookie SettingsCookie Settings</p>
+          <p className="text-primary">Terms</p>
+          <p className="text-primary">Privacy</p>
+          <p className="text-primary">Disclosures</p>
+          <p className="text-primary">Cookie Settings</p>
           <p className="text-primary">© AL Advisors Management Inc.</p>
         </div>
         <div className="flex gap-3">

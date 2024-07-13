@@ -30,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({
       handleNext();
     }, autoSlideInterval);
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId); 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, autoSlideInterval]);
 

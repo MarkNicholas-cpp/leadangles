@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import GradientButton from "./Utils/GradientButton";
-import ListItemCard from "./Utils/ListItemCard";
-import ThemeContainer from "./Utils/ThemeContainer";
-import { Slide } from "../interfaces/slide";
-import Carousel from "./Utils/Carousel";
+import GradientButton from "../Utils/GradientButton";
+import ListItemCard from "../Utils/ListItemCard";
+import ThemeContainer from "../Utils/ThemeContainer";
+import { Slide } from "../../interfaces/slide";
+import Carousel from "../Utils/Carousel";
 
 function Home() {
   const slides: Slide[] = [
@@ -246,8 +246,7 @@ function Home() {
           title="Testimonials"
         />
       </div>
-      <div className="h-screen bg-fixed bg-logo bg-contain bg-no-repeat bg-center">
-      </div>
+      <div className="h-screen bg-fixed bg-logo bg-contain bg-no-repeat bg-center"></div>
     </>
   );
 }
