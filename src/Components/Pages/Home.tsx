@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import GradientButton from "../Utils/GradientButton";
-import ListItemCard from "../Utils/ListItemCard";
 import ThemeContainer from "../Utils/ThemeContainer";
 import { Slide } from "../../interfaces/slide";
 import Carousel from "../Utils/Carousel";
@@ -41,47 +40,45 @@ function Home() {
           threshold: 0,
         }}
       >
-        <div className="md:h-[calc(100vh-96px)] flex items-start md:items-center justify-start p-10 pb-0 md:pt-0 md:w-3/4">
+        <div className="md:h-[calc(100vh-96px)] flex items-start md:items-center justify-start p-10 pb-0 md:pt-0 lg:w-3/4 ">
           <div className="flex flex-col gap-4 items-start md:gap-8">
             <GradientButton content={"Explore our 2023 Year in Review"} />
-            <p className="text-6xl md:text-8xl lg:text-9xl dark:text-purple-200 font-angel">
-              Built to scale all private funds
+            <p className="text-6xl md:text-8xl lg:text-8xl dark:text-purple-200 font-angel">
+              Welcome to Lead Angels Investment Platform
             </p>
-            <p className="text-2xl dark:text-purple-200 font-angel">
-              AngelList provides investors and innovators with the tools to
-              grow.
+            <p className="text-md md:text-xl dark:text-purple-200 font-angel">
+              Here at Lead Angels we focus on markets where technology,
+              innovation, and capital can unlock long-term value and drive
+              economic growth.
             </p>
-            <button className="border border-white p-3 px-4 rounded-md bg-white dark:text-primary">
-              Contact Sales
-            </button>
+            <a
+              href="/About"
+              className="border border-white p-3 px-4 rounded-md bg-white dark:text-primary"
+            >
+              Know About Us
+            </a>
           </div>
-        </div>
-        <div className="flex items-start justify-center flex-nowrap overflow-scroll no-scrollbar p-10">
-          <ListItemCard />
-          <ListItemCard />
-          <ListItemCard />
-          <ListItemCard />
         </div>
 
         <div className="py-3">
           <div className="flex items-center justify-center w-full">
             <div className="mb-10">
-              <p className="text-3xl text-center mb-10" ref={eleref}>
-                Better together. AngelList partners with industry leaders.
+              <p className="text-2xl text-center mb-10" >
+                Better together. Lead Angels partners with industry leaders.
               </p>
-              <GradientButton
-                content={
-                  "Our premier partnership program assembles top professionals to deliver comprehensive expertise & support"
-                }
-              />
+              <div className="px-10">
+                <GradientButton
+                  content={
+                    "Our premier partnership program assembles top professionals to deliver comprehensive expertise & support"
+                  }
+                />
+              </div>
             </div>
           </div>
         </div>
         <div className="px-10">
-          <p className="text-lg  mb-16">
-            Software for Venture & Private Equity
-          </p>
-          <p className="text-4xl md:text-7xl text-angel md:w-3/4">
+          <p className="text-lg mb-16" ref={eleref}>Software for Venture & Private Equity</p>
+          <p className="text-4xl md:text-6xl mb-5 md:mb-10 text-angel">
             Our software suite amplifies opportunity for venture and private
             equity firms, regardless of stage or provider.
           </p>
@@ -205,7 +202,7 @@ function Home() {
             </p>
           </div>
           <div className="flex items-center justify-center flex-col border-t dark:border-[#5D5337]">
-            <p className="text-9xl md:text-[15rem] ">$124B</p>
+            <p className="text-9xl lg:text-[15rem] ">$124B</p>
             <p className="text-sm">assets on platform</p>
           </div>
           <div className="max-w-96">

@@ -134,8 +134,8 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="rights py-5 border-b border-t border-slate-300 flex items-center justify-between text-sm my-10">
-        <div className="flex gap-5">
+      <div className="rights py-5 border-b border-t border-slate-300 flex md:items-center items-start justify-between text-sm my-10">
+        <div className="flex gap-5 flex-col md:flex-row">
           <p className="text-primary">Terms</p>
           <p className="text-primary">Privacy</p>
           <p className="text-primary">Disclosures</p>

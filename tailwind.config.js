@@ -18,6 +18,9 @@ export default {
       },
       borderColor: {
         primary: 'rgb(0,29,33)'
+      },
+      colors: {
+        primary: 'rgb(0,29,33)'
       }
     },
   },
