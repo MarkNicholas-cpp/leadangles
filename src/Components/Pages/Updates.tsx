@@ -1,4 +1,3 @@
-import React from "react";
 import BlogPostCard from "../Utils/BlogPostCard";
 
 const blogPosts = [
